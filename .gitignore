@@ -1,5 +1,3 @@
-/entorno
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -9,6 +7,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+.Python
 build/
 develop-eggs/
 dist/
@@ -136,6 +135,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+/entorno
 .env
 .envrc
 .venv
@@ -195,14 +195,10 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# Cursor
-#  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
-#  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
-#  refer to https://docs.cursor.com/context/ignore-files
-.cursorignore
-.cursorindexingignore
-
 # Marimo
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Streamlit
+.streamlit/secrets.toml

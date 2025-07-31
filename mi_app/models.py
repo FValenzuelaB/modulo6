@@ -8,6 +8,7 @@ class Producto(models.Model):
     stock=models.PositiveBigIntegerField("stock", default=0)
     creado=models.DateTimeField("creado",auto_now_add=True)
     actualizado=models.DateTimeField("actualizado",auto_now=True)
+    imagen=models.ImageField("imagen", upload_to="productos/", blank=True, null=True)
 
     def __str__(self):
         return f"{self.nombre}"
